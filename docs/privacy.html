@@ -1,189 +1,234 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SaFar IPTV Player — Privacy Policy</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&family=Noto+Sans+Gurmukhi:wght@800&display=swap">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safar IPTV · Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Gurmukhi:wght@700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#f4f5f8;--dim:#b4bac6;--red:#ff3b4a;--gold:#ffb703;--card:rgba(255,255,255,.07);--edge:rgba(255,255,255,.13)}
-*{box-sizing:border-box;margin:0}
-html,body{background:#0a0713;color:var(--ink);font:16px/1.7 Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
-body{background:linear-gradient(135deg,#1d0b3a 0%,#3b0d4f 28%,#7a1237 58%,#b4341a 82%,#e8741c 100%);background-attachment:fixed;background-size:300% 300%;animation:flow 24s ease-in-out infinite}
-@keyframes flow{50%{background-position:100% 100%}}
-a{color:#fff}
+  :root { --bg: #07080b; --card: #12141a; --card2: #171a21; --line: rgba(255,255,255,.09); --fg: #f4f4f6; --dim: #a7abb6; --faint: #6c7180; --red: #e50914; --red2: #ff4d57; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--red2); text-decoration: none; } a:hover { text-decoration: underline; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 
-/* ----- top: logo over drifting posters ----- */
-.top{position:relative;overflow:hidden;text-align:center;padding:64px 20px 54px;border-bottom:1px solid var(--edge)}
-.wall{position:absolute;inset:-12% -6%;display:grid;grid-template-columns:repeat(9,1fr);gap:12px;transform:rotate(-8deg) scale(1.15);opacity:.55}
-.col{display:flex;flex-direction:column;gap:12px;animation:up 40s linear infinite}.col:nth-child(even){animation-direction:reverse;animation-duration:50s}
-@keyframes up{to{transform:translateY(-50%)}}
-.po{aspect-ratio:2/3;border-radius:11px;padding:10px;display:flex;align-items:flex-end;font:800 13px/1.15 "Archivo Black",Inter,sans-serif;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.5)}
-.shade{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(15,6,30,.55),rgba(15,6,30,.92) 85%)}
-.logo{position:relative;z-index:2}
-.pa{font:800 clamp(64px,13vw,128px)/1.05 "Noto Sans Gurmukhi",sans-serif;background:linear-gradient(180deg,#fff2b0,#ffb703 55%,#ff6a00);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px rgba(255,150,0,.45));animation:pop .9s cubic-bezier(.2,.9,.3,1.3) both}
-@keyframes pop{from{opacity:0;transform:scale(.7)}}
-.en{display:flex;justify-content:center;font:clamp(30px,7vw,60px)/1 "Archivo Black",Inter,sans-serif;letter-spacing:.07em}
-.en span{animation:rise .6s both}.en span:nth-child(1){animation-delay:.4s}.en span:nth-child(2){animation-delay:.5s}.en span:nth-child(3){animation-delay:.6s;color:var(--red)}.en span:nth-child(4){animation-delay:.7s;color:var(--red)}.en span:nth-child(5){animation-delay:.8s;color:var(--red)}
-@keyframes rise{from{opacity:0;transform:translateY(.5em)}}
-.road{height:5px;width:min(420px,70%);margin:16px auto 0;border-radius:9px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
-.road::before{content:"";position:absolute;left:0;right:-60px;top:1px;height:3px;background:repeating-linear-gradient(90deg,#ffd166 0 24px,transparent 24px 52px);animation:lane 1.1s linear infinite}
-@keyframes lane{to{transform:translateX(-52px)}}
-h1{position:relative;z-index:2;font-size:clamp(24px,4vw,34px);margin-top:20px;letter-spacing:-.01em}
-.upd{position:relative;z-index:2;color:var(--dim);font-size:14px;margin-top:4px}
+  /* ---------- top ---------- */
+  .hero { position: relative; overflow: hidden; padding: 72px 0 56px; text-align: center;
+    background: radial-gradient(60% 70% at 50% 0%, rgba(229,9,20,.28), transparent 70%), radial-gradient(40% 50% at 85% 30%, rgba(90,110,255,.14), transparent 70%); }
+  .brand { display: inline-flex; align-items: center; gap: 16px; }
+  .mark { width: 74px; height: 74px; border-radius: 50%; background: var(--red); display: grid; place-items: center;
+    box-shadow: 0 0 0 8px rgba(229,9,20,.18), 0 0 0 18px rgba(229,9,20,.07), 0 18px 50px rgba(229,9,20,.45); }
+  .mark svg { width: 30px; height: 34px; margin-left: 6px; }
+  .word { text-align: left; line-height: 1; }
+  .word b { display: block; font-size: 46px; font-weight: 900; letter-spacing: .01em; }
+  .word span { display: inline-block; margin-top: 6px; font-family: "Noto Sans Gurmukhi", sans-serif; font-weight: 800; color: var(--red2); font-size: 22px; }
+  .word i { font-style: normal; font-weight: 800; font-size: 12px; letter-spacing: .32em; margin-left: 10px; color: #fff; }
+  .hero h1 { margin: 34px auto 0; max-width: 760px; font-size: clamp(30px, 5vw, 54px); line-height: 1.08; font-weight: 900; letter-spacing: -.02em; }
+  .hero h1 em { font-style: normal; background: linear-gradient(90deg, #fff, #ff8a91); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p { margin: 18px auto 0; max-width: 640px; color: var(--dim); font-size: 17px; line-height: 1.6; }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 26px; }
+  .chip { padding: 8px 14px; border-radius: 99px; background: rgba(255,255,255,.06); border: 1px solid var(--line); font-size: 13px; font-weight: 600; color: #e6e7ea; }
+  .chip::before { content: "✓"; color: #30d158; font-weight: 900; margin-right: 6px; }
 
-/* ----- content ----- */
-main{max-width:900px;margin:0 auto;padding:34px 18px 70px}
-.pills{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:0 0 30px}
-.pill{background:var(--card);border:1px solid var(--edge);border-radius:16px;padding:16px;backdrop-filter:blur(6px)}
-.pill b{display:block;font-size:17px}.pill span{color:var(--dim);font-size:14px}
-.pill i{font-style:normal;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;margin-bottom:8px;font-size:18px;background:linear-gradient(135deg,var(--red),#ff8a00)}
-.sec{background:var(--card);border:1px solid var(--edge);border-radius:20px;padding:24px 24px 18px;margin:18px 0;backdrop-filter:blur(6px)}
-.sec h2{font-size:21px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
-.sec h2::before{content:"";width:8px;height:24px;border-radius:5px;background:linear-gradient(180deg,var(--gold),var(--red))}
-.sec p{margin:8px 0;color:#e6e8ee}
-ul{padding-left:22px}li{margin:6px 0;color:#e6e8ee}
-.wrap{overflow-x:auto;margin:10px 0}
-table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
-th,td{padding:11px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
-th{color:#fff;background:rgba(255,255,255,.08);font-weight:700}
-tr:last-child td{border-bottom:0}
-code{background:rgba(0,0,0,.35);padding:1px 6px;border-radius:6px;font-size:13px}
-strong{color:#fff}
-footer{text-align:center;color:var(--dim);font-size:14px;padding:10px 20px 50px}
-@media (max-width:700px){.wall{grid-template-columns:repeat(4,1fr)}.col:nth-child(n+5){display:none}.sec{padding:18px 16px 12px}}
-@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important}}
+  /* ---------- screenshots ---------- */
+  .shots { padding: 26px 0 10px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .poster { position: relative; border-radius: 22px; padding: 18px 18px 22px; overflow: hidden; border: 1px solid var(--line);
+    background: linear-gradient(160deg, #1b1e27, #0d0f14 70%); }
+  .poster::before { content: ""; position: absolute; inset: -40% -20% auto auto; width: 70%; height: 80%; border-radius: 50%; background: var(--glow, rgba(229,9,20,.35)); filter: blur(60px); opacity: .55; }
+  .poster h3 { position: relative; margin: 2px 2px 4px; font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
+  .poster p { position: relative; margin: 0 2px 14px; font-size: 13.5px; color: var(--dim); line-height: 1.45; }
+  .tv { position: relative; border-radius: 12px; padding: 6px; background: #000; box-shadow: 0 0 0 1px rgba(255,255,255,.12), 0 20px 40px rgba(0,0,0,.6); }
+  .tv img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 7px; }
+  .tv::after { content: ""; position: absolute; left: 50%; bottom: -12px; width: 22%; height: 6px; transform: translateX(-50%); border-radius: 0 0 6px 6px; background: #1d2028; }
 
-/* ===== v3: badge logo + modern sliding posters ===== */
-.pa,.en,.road{display:none!important}
-.badge{position:relative;z-index:2;text-align:center}
-.bk{position:relative;display:inline-block;overflow:hidden;padding:2px 40px 10px;border-radius:30px;background:linear-gradient(135deg,#ffd23f,#ff9f0a 55%,#ff6a00);color:#0b0f14;font:800 clamp(64px,14vw,132px)/1.12 "Noto Sans Gurmukhi","Mukta Mahee",sans-serif;box-shadow:0 22px 80px rgba(255,140,0,.5),inset 0 -6px 0 rgba(0,0,0,.12);animation:bpop .9s cubic-bezier(.2,.9,.3,1.3) both}
-.bk::after{content:"";position:absolute;top:-20%;bottom:-20%;width:34%;left:-50%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-18deg);animation:shine 4.5s 1.4s ease-in-out infinite}
-@keyframes shine{0%{left:-50%}45%,100%{left:130%}}
-@keyframes bpop{from{opacity:0;transform:scale(.72) translateY(12px)}}
-.bs{margin-top:12px;font:clamp(18px,3.6vw,30px)/1 "Archivo Black",Inter,sans-serif;letter-spacing:.42em;padding-left:.42em;animation:brise .7s .5s both}
-.bs span{color:#ff9f0a}
-@keyframes brise{from{opacity:0;transform:translateY(.6em)}}
-.wall{position:absolute;inset:0;display:flex!important;flex-direction:column;justify-content:center;gap:16px;transform:rotate(-4deg) scale(1.1);opacity:.95;grid-template-columns:none!important}
-.row{display:flex;gap:16px;width:max-content;animation:slide 70s linear infinite}
-.row:nth-child(even){animation-direction:reverse;animation-duration:88s}
-.row:nth-child(3n){animation-duration:58s}
-@keyframes slide{to{transform:translateX(-50%)}}
-.po{position:relative;flex:none;width:clamp(96px,13vw,150px);aspect-ratio:2/3;border-radius:16px;overflow:hidden;padding:0!important;display:block!important;box-shadow:0 14px 34px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.2)}
-.po .art{position:absolute;inset:0}
-.po .g{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72));}
-.po .t{position:absolute;left:10px;right:8px;bottom:22px;font:800 clamp(11px,1.5vw,15px)/1.1 "Archivo Black",Inter,sans-serif;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5)}
-.po .y{position:absolute;left:10px;bottom:9px;font:600 9px/1 Inter,sans-serif;letter-spacing:.14em;color:rgba(255,255,255,.75);text-transform:uppercase}
-.po .n{position:absolute;right:8px;top:8px;font:800 8px/1 Inter,sans-serif;letter-spacing:.1em;background:#ff3b4a;color:#fff;border-radius:5px;padding:3px 5px}
-.col{all:unset}</style></head>
+  /* ---------- drawn dummy screens (no real films, posters or channels) ---------- */
+  .scr { position: relative; aspect-ratio: 16 / 9; border-radius: 7px; overflow: hidden; background: #0b0c10; container-type: inline-size; }
+  .scr .bar { position: absolute; top: 4.5cqw; left: 50%; transform: translateX(-50%); display: flex; gap: 1.4cqw; padding: 1cqw 1.6cqw; border-radius: 99px; background: rgba(20,22,28,.85); border: 1px solid rgba(255,255,255,.12); }
+  .scr .bar i { display: block; width: 6cqw; height: 2cqw; border-radius: 99px; background: rgba(255,255,255,.22); }
+  .scr .bar i.on { background: #fff; }
+  .hb { position: absolute; inset: 0 0 38% 0; background: linear-gradient(90deg, rgba(11,12,16,.95) 15%, transparent 65%), linear-gradient(0deg, #0b0c10 2%, transparent 40%), var(--art); }
+  .ht { position: absolute; left: 5cqw; top: 9cqw; }
+  .ht .k { display: inline-block; padding: .5cqw 1.2cqw; border-radius: .8cqw; background: var(--red); font: 800 1.9cqw Inter, sans-serif; letter-spacing: .1em; }
+  .ht b { display: block; margin-top: 1.4cqw; font-size: 4.4cqw; font-weight: 900; letter-spacing: -.02em; line-height: 1; }
+  .ht s { display: block; text-decoration: none; margin-top: 1.4cqw; width: 30cqw; height: 1.4cqw; border-radius: 99px; background: rgba(255,255,255,.25); box-shadow: 0 2.4cqw 0 rgba(255,255,255,.14); }
+  .ht u { display: inline-block; text-decoration: none; margin-top: 4.2cqw; padding: 1.2cqw 3.2cqw; border-radius: 99px; background: #fff; color: #111; font: 800 2.2cqw Inter, sans-serif; }
+  .row { position: absolute; left: 5cqw; right: -10cqw; display: flex; gap: 2cqw; }
+  .row.r1 { bottom: 4cqw; }
+  .lbl { position: absolute; left: 5cqw; font-size: 2.3cqw; font-weight: 800; }
+  .p { flex: none; width: 13cqw; aspect-ratio: 2 / 3; border-radius: 1.2cqw; background: var(--art); position: relative; overflow: hidden; }
+  .p.w { width: 22cqw; aspect-ratio: 16 / 9; }
+  .p::after { content: attr(data-t); position: absolute; left: 1cqw; right: 1cqw; bottom: 1.2cqw; font: 900 1.9cqw Inter, sans-serif; letter-spacing: .02em; color: #fff; text-shadow: 0 .3cqw 1cqw rgba(0,0,0,.6); }
+  .p.on { outline: .5cqw solid #fff; outline-offset: .4cqw; }
+  .p .prog { position: absolute; left: 0; right: 0; bottom: 0; height: .8cqw; background: rgba(255,255,255,.25); }
+  .p .prog i { display: block; height: 100%; width: var(--w, 40%); background: var(--red); }
+  .p .nb { position: absolute; top: 1cqw; right: 1cqw; padding: .3cqw .9cqw; border-radius: .6cqw; background: var(--red); font: 800 1.5cqw Inter, sans-serif; }
+  /* poster art: made-up gradients only */
+  .a1 { --art: radial-gradient(60% 80% at 70% 30%, #ffb347, transparent 60%), linear-gradient(135deg, #7a1f2b, #1b0f2e); }
+  .a2 { --art: radial-gradient(50% 70% at 30% 70%, #4ad3ff, transparent 60%), linear-gradient(160deg, #0f2f5a, #071225); }
+  .a3 { --art: radial-gradient(60% 60% at 60% 40%, #8bff9b, transparent 60%), linear-gradient(140deg, #164a2c, #0b1a12); }
+  .a4 { --art: radial-gradient(60% 60% at 40% 30%, #ff6fd8, transparent 60%), linear-gradient(150deg, #4b1452, #160a24); }
+  .a5 { --art: radial-gradient(70% 60% at 60% 60%, #ffd86b, transparent 60%), linear-gradient(130deg, #5a3a0e, #1c1206); }
+  .a6 { --art: radial-gradient(60% 70% at 50% 30%, #c9d6ff, transparent 60%), linear-gradient(160deg, #2b3a67, #0d1022); }
+  .a7 { --art: radial-gradient(60% 60% at 30% 40%, #ff7a59, transparent 60%), linear-gradient(140deg, #5a1d10, #170806); }
+  .a8 { --art: radial-gradient(60% 60% at 70% 50%, #7affe4, transparent 60%), linear-gradient(150deg, #0e4a44, #06171a); }
+  /* film page */
+  .dp { position: absolute; inset: 0; background: linear-gradient(90deg, #0b0c10 35%, transparent 75%), var(--art); }
+  .dp ~ .ht { top: 5cqw; }
+  .parts { position: absolute; left: 5cqw; bottom: 3cqw; display: flex; gap: 2cqw; } .parts .p { width: 10cqw; }
+  /* menu */
+  .menu { position: absolute; left: 2cqw; top: 2cqw; bottom: 2cqw; width: 26cqw; border-radius: 2.4cqw; background: rgba(18,19,24,.96); border: 1px solid rgba(255,255,255,.14); padding: 2.4cqw 1.6cqw; }
+  .menu .lg { display: flex; align-items: center; gap: 1.2cqw; margin: 0 0 2.6cqw 1cqw; }
+  .menu .lg i { width: 5cqw; height: 5cqw; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 .6cqw rgba(229,9,20,.25); }
+  .menu .lg b { font-size: 3.4cqw; font-weight: 900; }
+  .menu .it { display: flex; justify-content: space-between; align-items: center; height: 3.6cqw; padding: 0 1.4cqw; border-radius: 99px; margin-bottom: .5cqw; }
+  .menu .it span { width: var(--w, 60%); height: 1.2cqw; border-radius: 99px; background: rgba(255,255,255,.35); }
+  .menu .it em { font-style: normal; font: 700 1.5cqw Inter, sans-serif; color: rgba(255,255,255,.55); }
+  .menu .it.on { background: #fff; } .menu .it.on span { background: #111; }
+  .dim { position: absolute; inset: 0; background: rgba(0,0,0,.55); }
+  /* live TV: channel tiles with made-up generic marks */
+  .ch { flex: none; width: 17cqw; aspect-ratio: 16 / 10; border-radius: 1.4cqw; background: #1c1e25; display: grid; place-items: center; font: 900 2.2cqw Inter, sans-serif; letter-spacing: .04em; }
+  .ch b { padding: .6cqw 1.4cqw; border-radius: .8cqw; background: var(--c); color: #fff; }
+
+  /* phone + tablet frames */
+  .devices { display: flex; align-items: flex-end; justify-content: center; gap: 4%; padding: 8px 0 14px; }
+  .phone { width: 34%; border-radius: 22px; padding: 6px; background: #000; box-shadow: 0 0 0 1px rgba(255,255,255,.14), 0 20px 40px rgba(0,0,0,.6); }
+  .ipad { width: 62%; border-radius: 18px; padding: 8px; background: #000; box-shadow: 0 0 0 1px rgba(255,255,255,.14), 0 20px 40px rgba(0,0,0,.6); }
+  .m { position: relative; overflow: hidden; border-radius: 17px; background: #0b0c10; container-type: inline-size; }
+  .phone .m { aspect-ratio: 9 / 19.5; } .ipad .m { aspect-ratio: 4 / 3; border-radius: 11px; }
+  .m .mh { position: absolute; left: 6cqw; right: 6cqw; top: 14cqw; aspect-ratio: 4 / 5; border-radius: 6cqw; background: linear-gradient(0deg, rgba(0,0,0,.75), transparent 55%), var(--art); }
+  .m .mh b { position: absolute; left: 6cqw; bottom: 16cqw; font-size: 9cqw; font-weight: 900; line-height: 1; }
+  .m .mh u { position: absolute; left: 6cqw; right: 6cqw; bottom: 5cqw; text-decoration: none; text-align: center; padding: 2.4cqw 0; border-radius: 99px; background: #fff; color: #111; font: 800 4.4cqw Inter, sans-serif; }
+  .m .tt { position: absolute; left: 0; right: 0; top: 4cqw; text-align: center; font: 800 5cqw Inter, sans-serif; }
+  .m .mr { position: absolute; left: 6cqw; right: -20cqw; display: flex; gap: 3cqw; }
+  .m .mr .p { width: 26cqw; border-radius: 3cqw; }
+  .m .mr .p::after { font-size: 3.6cqw; left: 2cqw; bottom: 2.4cqw; }
+  .m .tab { position: absolute; left: 4cqw; right: 4cqw; bottom: 3cqw; height: 13cqw; border-radius: 99px; background: rgba(30,32,40,.95); border: 1px solid rgba(255,255,255,.12); display: flex; justify-content: space-around; align-items: center; }
+  .m .tab i { width: 7cqw; height: 7cqw; border-radius: 2cqw; background: rgba(255,255,255,.3); } .m .tab i.on { background: var(--red); }
+  .ipad .grid4 { position: absolute; left: 4cqw; right: 4cqw; top: 15cqw; display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.4cqw; }
+  .ipad .grid4 .p { width: auto; border-radius: 1.8cqw; } .ipad .grid4 .p::after { font-size: 2cqw; }
+  .ipad .tt { font-size: 3.4cqw; top: 4cqw; text-align: left; left: 4cqw; }
+
+  /* ---------- policy ---------- */
+  .policy { padding: 54px 0 30px; }
+  .policy-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+  .policy-head h2 { margin: 0; font-size: 34px; font-weight: 900; letter-spacing: -.02em; }
+  .policy-head small { color: var(--faint); font-size: 13px; }
+  .lead { margin: 0 0 26px; padding: 20px 22px; border-radius: 18px; background: linear-gradient(135deg, rgba(229,9,20,.16), rgba(229,9,20,.04)); border: 1px solid rgba(229,9,20,.3); font-size: 16px; line-height: 1.6; }
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .card { padding: 20px 22px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); }
+  .card.wide { grid-column: 1 / -1; }
+  .card h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 8px; font-size: 17px; font-weight: 800; }
+  .card h3 .n { flex: none; width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center; background: rgba(229,9,20,.16); color: var(--red2); font-size: 13px; font-weight: 900; }
+  .card p, .card li { margin: 0; color: var(--dim); font-size: 14.5px; line-height: 1.62; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; } .card li + li { margin-top: 4px; }
+  .card strong { color: #fff; font-weight: 700; }
+  .contact { margin-top: 26px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 24px; border-radius: 20px; background: var(--card2); border: 1px solid var(--line); }
+  .contact b { display: block; font-size: 19px; font-weight: 800; }
+  .contact span { color: var(--dim); font-size: 14px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 99px; background: var(--red); color: #fff; font-weight: 800; font-size: 15px; }
+  .btn:hover { text-decoration: none; background: #ff1f2b; }
+  footer { padding: 30px 0 46px; text-align: center; color: var(--faint); font-size: 13px; }
+
+  @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) {
+    .grid, .cards { grid-template-columns: 1fr; }
+    .hero { padding: 48px 0 40px; } .word b { font-size: 36px; } .mark { width: 60px; height: 60px; }
+    .policy-head h2 { font-size: 28px; }
+  }
+</style>
+</head>
 <body>
 
-<header class="top">
-  <div class="wall" id="wall" aria-hidden="true"></div><div class="shade"></div>
-  <div class="logo">
-    <div class="badge"><div class="bk">ਸਫ਼ਰ</div><div class="bs">SAFAR <span>IPTV</span></div></div>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark"><svg viewBox="0 0 44 48"><path d="M4 3l38 21L4 45z" fill="#fff"/></svg></div>
+      <div class="word"><b>SAFAR</b><span>ਸਫ਼ਰ</span><i>IPTV</i></div>
+    </div>
+    <h1>Your channels. Your films. <em>Your privacy.</em></h1>
+    <p>Safar is a beautiful, fast player for the IPTV service you already have — on your Android TV, phone and tablet. Nothing about you leaves your device.</p>
+    <div class="chips"><span class="chip">No sign-up</span><span class="chip">No ads</span><span class="chip">No tracking</span><span class="chip">Data stays on your device</span></div>
   </div>
-  <h1>Privacy Policy</h1>
-  <p class="upd">SaFar IPTV Player · Last updated 14 November 2026</p>
 </header>
 
-<main>
-  <div class="pills">
-    <div class="pill"><i>🔒</i><b>Stays on your device</b><span>Your logins, settings and history are never sent to us.</span></div>
-    <div class="pill"><i>🚫</i><b>No ads, no tracking</b><span>No analytics, no advertising, no accounts with us.</span></div>
-    <div class="pill"><i>📺</i><b>Player only</b><span>SaFar includes no channels, films or subscriptions.</span></div>
-    <div class="pill"><i>🗑</i><b>Easy to delete</b><span>Uninstall the app and everything it stored is gone.</span></div>
+<section class="shots">
+  <div class="wrap">
+    <div class="grid">
+      <article class="poster" style="--glow: rgba(229,9,20,.45)"><h3>Everything on one screen</h3><p>New films up top, Continue Watching right below — pick up where you left off.</p>
+        <div class="tv"><div class="scr">
+          <div class="hb a1"></div><div class="bar"><i></i><i class="on"></i><i></i><i></i></div>
+          <div class="ht"><span class="k">NEW</span><b>Golden Fields</b><s></s><u>▶ Play</u></div>
+          <div class="lbl" style="bottom:17.5cqw">Continue Watching</div>
+          <div class="row r1"><div class="p w a2 on" data-t="Night Road"><div class="prog"><i style="--w:55%"></i></div></div><div class="p w a3" data-t="Monsoon"><div class="prog"><i style="--w:20%"></i></div></div><div class="p w a4" data-t="Skyline"><div class="prog"><i style="--w:70%"></i></div></div><div class="p w a5" data-t="The River"></div></div>
+        </div></div></article>
+      <article class="poster" style="--glow: rgba(255,140,40,.4)"><h3>Every part, together</h3><p>Open any film and its other parts appear below it. Resume shows the minutes left.</p>
+        <div class="tv"><div class="scr">
+          <div class="dp a7"></div>
+          <div class="ht"><span class="k">MOVIE</span><b>Last Train 2</b><s></s><u>▶ Resume · 52 min left</u></div>
+          <div class="lbl" style="bottom:19.5cqw">Parts</div>
+          <div class="parts"><div class="p a7" data-t="Last Train"><div class="prog"><i style="--w:100%"></i></div></div><div class="p a7 on" data-t="Last Train 2"><div class="prog"><i style="--w:45%"></i></div></div><div class="p a7" data-t="Last Train 3"><span class="nb">FRI</span></div></div>
+        </div></div></article>
+      <article class="poster" style="--glow: rgba(120,120,255,.4)"><h3>All your folders, one menu</h3><p>Search, Home, Favourites and every category with its count — one press away.</p>
+        <div class="tv"><div class="scr">
+          <div class="hb a6"></div><div class="row r1"><div class="p w a2" data-t=""></div><div class="p w a3" data-t=""></div><div class="p w a8" data-t=""></div><div class="p w a5" data-t=""></div></div><div class="dim"></div>
+          <div class="menu"><div class="lg"><i></i><b>SAFAR</b></div>
+            <div class="it on" style="--w:40%"><span></span></div><div class="it" style="--w:34%"><span></span></div><div class="it" style="--w:52%"><span></span><em>12</em></div>
+            <div class="it" style="--w:66%"><span></span><em>84</em></div><div class="it" style="--w:58%"><span></span><em>127</em></div><div class="it" style="--w:70%"><span></span><em>46</em></div><div class="it" style="--w:48%"><span></span><em>203</em></div></div>
+        </div></div></article>
+      <article class="poster" style="--glow: rgba(48,209,88,.35)"><h3>Live TV in seconds</h3><p>Channels start fast and keep playing smoothly, even on smaller TVs.</p>
+        <div class="tv"><div class="scr">
+          <div class="bar"><i></i><i></i><i class="on"></i><i></i></div>
+          <div class="lbl" style="top:15cqw">News</div>
+          <div class="row" style="top:20cqw"><div class="ch" style="--c:#d7263d"><b>NEWS 1</b></div><div class="ch" style="--c:#1b6ef3"><b>WORLD</b></div><div class="ch" style="--c:#0aa36b"><b>CITY 24</b></div><div class="ch" style="--c:#f39c12"><b>LOCAL</b></div><div class="ch" style="--c:#8e44ad"><b>INFO</b></div></div>
+          <div class="lbl" style="top:36cqw">Music</div>
+          <div class="row" style="top:41cqw"><div class="ch" style="--c:#e84393"><b>BEATS</b></div><div class="ch" style="--c:#00a8a8"><b>TUNES</b></div><div class="ch" style="--c:#6c5ce7"><b>HITS</b></div><div class="ch" style="--c:#e17055"><b>RHYTHM</b></div><div class="ch" style="--c:#2d3436"><b>CLASSIC</b></div></div>
+        </div></div></article>
+      <article class="poster" style="--glow: rgba(229,9,20,.45)"><h3>On your phone</h3><p>The same Safar on Android phones — swipe through your films and channels anywhere at home.</p>
+        <div class="devices"><div class="phone"><div class="m">
+          <div class="tt">Movies</div>
+          <div class="mh a4"><b>Skyline</b><u>▶ Play</u></div>
+          <div class="mr" style="top:122cqw"><div class="p a1" data-t="Golden"></div><div class="p a2" data-t="Night"></div><div class="p a3" data-t="Monsoon"></div><div class="p a5" data-t="River"></div></div>
+          <div class="tab"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+        </div></div></div></article>
+      <article class="poster" style="--glow: rgba(90,140,255,.4)"><h3>And on your tablet</h3><p>Big, clear and easy on tablets — every category as a full grid of posters.</p>
+        <div class="devices"><div class="ipad"><div class="m">
+          <div class="tt">Drama · 46 titles</div>
+          <div class="grid4"><div class="p a1" data-t="Golden"></div><div class="p a6" data-t="Skyline"></div><div class="p a3" data-t="Monsoon"></div><div class="p a7" data-t="Last Train"></div><div class="p a2" data-t="Night"></div><div class="p a5" data-t="River"></div><div class="p a8" data-t="Harbor"></div><div class="p a4" data-t="Bloom"></div><div class="p a1" data-t="Sunrise"></div><div class="p a6" data-t="Frost"></div></div>
+          <div class="tab" style="height:7cqw"><i class="on" style="width:3.6cqw;height:3.6cqw"></i><i style="width:3.6cqw;height:3.6cqw"></i><i style="width:3.6cqw;height:3.6cqw"></i><i style="width:3.6cqw;height:3.6cqw"></i></div>
+        </div></div></div></article>
+    </div>
   </div>
+</section>
 
-  <section class="sec">
-    <h2>About SaFar</h2>
-    <p>SaFar IPTV Player ("SaFar", "the app") is a video player for Android TV, phones and tablets, available on Google Play. It does <strong>not</strong> provide or include any channels, films, series or subscriptions. You sign in with a playlist or account from an IPTV service you already use.</p>
-    <p>This policy explains what the app stores, what leaves your device, and the choices you have. In short: <strong>we do not collect your personal information.</strong> There is no server of ours that receives anything about you.</p>
-  </section>
+<section class="policy" id="privacy">
+  <div class="wrap">
+    <div class="policy-head"><h2>Privacy Policy</h2><small>Effective November 14, 2026</small></div>
+    <p class="lead"><strong>In short:</strong> Safar is only a player. It has no account system, no ads and no tracking. Everything you set up in Safar is saved on your own device, and we never collect, see or sell your information.</p>
+    <div class="cards">
+      <div class="card"><h3><span class="n">1</span>Your data stays on your device</h3><p>Your IPTV account, Favourites, Continue Watching, where you stopped in a film, and all your settings are saved <strong>only on the TV, phone or tablet</strong> you use. Safar has no server of its own that stores them.</p></div>
+      <div class="card"><h3><span class="n">2</span>No account, no sign-up</h3><p>Safar never asks for your name, email address or phone number, and you don't create an account with us.</p></div>
+      <div class="card"><h3><span class="n">3</span>No ads, no tracking</h3><p>There are no advertisements in Safar. What you watch, search or save is <strong>never recorded, analysed or shared</strong> — not with us and not with anyone else.</p></div>
+      <div class="card"><h3><span class="n">4</span>Your passwords</h3><p>Your IPTV username and password are kept only on your device and are sent <strong>only to your own IPTV server</strong>, to sign you in. We never receive them.</p></div>
+      <div class="card wide"><h3><span class="n">5</span>Safar is only a player</h3><p>Safar is a media player. It does <strong>not include, host, sell or provide</strong> any channels, films, series or playlists. Everything you watch plays from the IPTV service you add yourself.</p>
+        <ul><li>Safar has <strong>no rights to, and no control over,</strong> that content, and is not connected with, endorsed by or responsible for any IPTV provider.</li><li>You are responsible for making sure you have the right to watch the content you add.</li><li>Any questions about channels, films or your IPTV subscription belong with your IPTV provider.</li></ul></div>
+      <div class="card"><h3><span class="n">6</span>What Safar connects to</h3><p>Only what it needs to work: your own IPTV server (to show and play your lists), pictures for films and channels, and a check for a newer version of Safar. <strong>Nothing about you</strong> is sent with these requests.</p></div>
+      <div class="card"><h3><span class="n">7</span>Sign in with your phone</h3><p>Scanning the code on your TV works <strong>only inside your home WiFi</strong>. The details you type go straight from your phone to your TV — never over the internet — and the code stops working after 5 minutes.</p></div>
+      <div class="card"><h3><span class="n">8</span>Payments</h3><p>If you choose a plan, it is paid through the app store you installed Safar from. <strong>Safar never sees your card or bank details.</strong> The free trial and the plan can be cancelled any time in the store's Subscriptions.</p></div>
+      <div class="card"><h3><span class="n">9</span>Permissions</h3><p><strong>Internet</strong> — to play your channels and films. <strong>Installing updates</strong> — only to put a newer Safar on your device when you press Update. Safar does <strong>not</strong> use your camera, microphone, contacts or location.</p></div>
+      <div class="card"><h3><span class="n">10</span>Children</h3><p>Safar does not knowingly collect any personal information from anyone, including children under 13.</p></div>
+      <div class="card"><h3><span class="n">11</span>Delete your data</h3><p>In Safar, use <strong>Clear Play History</strong>, remove your IPTV account, or simply uninstall the app — everything is deleted from your device. Because nothing is kept anywhere else, there is nothing more to delete.</p></div>
+      <div class="card"><h3><span class="n">12</span>Security</h3><p>Your information never leaves your device except to reach your own IPTV server. Keep your device protected with a screen lock if others use it.</p></div>
+      <div class="card"><h3><span class="n">13</span>Changes to this policy</h3><p>If this policy ever changes, the new version will be posted on this page and shown inside Safar, with a new effective date.</p></div>
+    </div>
+    <div class="contact">
+      <div><b>Questions about privacy or Safar?</b><span>We're happy to help — write to us any time.</span></div>
+      <a class="btn" href="mailto:safariptv.help@gmail.com">✉ safariptv.help@gmail.com</a>
+    </div>
+  </div>
+</section>
 
-  <section class="sec">
-    <h2>What stays on your device</h2>
-    <div class="wrap"><table>
-      <tr><th>What</th><th>Why</th><th>Where</th></tr>
-      <tr><td>The server address, username and password, playlist link or MAC address you enter</td><td>to sign you in to <em>your</em> IPTV service</td><td>the app's private storage on your device</td></tr>
-      <tr><td>Your settings: logo, layout, category order, sound and picture choices</td><td>to remember how you like the app</td><td>the app's private storage</td></tr>
-      <tr><td>Favourites and Continue Watching</td><td>to show them on your home screen</td><td>the app's private storage</td></tr>
-      <tr><td>Saved lists of categories, films, series and channels</td><td>so your home screen opens fast</td><td>the app's private storage and cache</td></tr>
-      <tr><td>Downloaded pictures</td><td>to show a picture at once</td><td>the app's cache</td></tr>
-    </table></div>
-    <p>Uninstalling SaFar, or clearing its data in Android Settings → Apps, deletes all of this. Inside the app you can also remove an account and clear your history at any time.</p>
-  </section>
-
-  <section class="sec">
-    <h2>What leaves your device</h2>
-    <p>SaFar sends data only to make the app work, and never to the developer.</p>
-    <ul>
-      <li><strong>Your IPTV service.</strong> The login you enter is sent to the server you entered, and nowhere else. That service provides your lists, details and videos, and its own privacy practices apply.</li>
-      <li><strong>Pictures and trailers.</strong> To show posters and play trailers, the app asks the public online servers that your IPTV service or the film listing points to. Like any website, they can see your device's internet address and the picture or title requested. No login details are sent to them.</li>
-      <li><strong>Your phone, on your own Wi‑Fi.</strong> If you choose "Sign in with your phone", the app opens a small page on your TV that is reachable only on your own home network and protected by a one‑time code. What you type goes straight to your TV, never to the internet. The page closes after sign‑in or after 5 minutes.</li>
-    </ul>
-    <p>SaFar has no analytics, no advertising and no tracking of any kind, and does not sell or share personal information.</p>
-  </section>
-
-  <section class="sec">
-    <h2>Permissions</h2>
-    <div class="wrap"><table>
-      <tr><th>Permission</th><th>Why the app needs it</th></tr>
-      <tr><td>Internet and network state (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>)</td><td>to reach your IPTV service and show pictures; to know whether you are online; to show your local network address when you sign in with a phone or a MAC portal</td></tr>
-      <tr><td>Run at start‑up (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>so the quiet background refresh of your lists carries on after the device restarts</td></tr>
-    </table></div>
-    <p>SaFar does not ask for your location, contacts, camera, microphone, photos or files.</p>
-  </section>
-
-  <section class="sec">
-    <h2>Updates</h2>
-    <p>SaFar is installed and updated through Google Play. The app does not check for updates by itself and sends nothing about you for that purpose.</p>
-  </section>
-
-  <section class="sec">
-    <h2>Your content, your responsibility</h2>
-    <p>SaFar is only a player. The developer has no access to, and no control over, what your IPTV service provides. Please use SaFar only with content you have the right to watch.</p>
-  </section>
-
-  <section class="sec">
-    <h2>Google Play data safety</h2>
-    <ul>
-      <li><strong>Data collected by the developer:</strong> none.</li>
-      <li><strong>Data shared:</strong> none for advertising or analytics. Your login is sent only to the IPTV server you enter.</li>
-      <li><strong>Encrypted in transit:</strong> yes, whenever your server and the online services support a secure connection.</li>
-      <li><strong>Deleting your data:</strong> uninstall the app or clear its data. Nothing is held anywhere else.</li>
-    </ul>
-  </section>
-
-  <section class="sec">
-    <h2>Children</h2>
-    <p>SaFar is not directed at children under 13 and does not knowingly collect information from anyone.</p>
-  </section>
-
-  <section class="sec">
-    <h2>Changes to this policy</h2>
-    <p>If this policy changes, the new version will be posted on this page with a new date.</p>
-  </section>
-
-  <section class="sec">
-    <h2>Contact</h2>
-    <p>Questions or requests about privacy? Contact the developer through the contact details on the SaFar IPTV Player page on Google Play.</p>
-  </section>
-</main>
-<footer>© SaFar IPTV Player</footer>
-
-<script>
-// modern made-up posters (invented titles, drawn with shapes — no real films): they slide sideways, row by row
-var T=[["Night Highway","Thriller"],["River of Stars","Drama"],["The Last Train","Mystery"],["Monsoon Hearts","Romance"],["Desert Kings","Action"],["Blue Village","Family"],["Second Chance","Drama"],["City Lights","Comedy"],["Golden Fields","Drama"],["Old Friends","Comedy"],["Storm Point","Action"],["Silent Hills","Horror"],["Paper Moon","Fantasy"],["Red Harvest","Crime"],["Summer Rain","Romance"],["Iron Road","Adventure"],["Neon Nights","Sci‑Fi"],["Open Skies","Adventure"]];
-var P=[["#12082e","#7b2cff","#ff4fa3"],["#04222f","#0aa5c0","#b6ff5a"],["#2a0a0a","#e5383b","#ffb703"],["#0b1d3a","#3a86ff","#ff006e"],["#1b0b2e","#ff5d8f","#ffd166"],["#031b14","#10b981","#fde047"],["#2d1203","#ff7a18","#ffe29f"],["#0d0d1a","#5f5af6","#00e5ff"]];
-function art(i,p){var a=p[0],b=p[1],c=p[2],t=i%6,base="background:linear-gradient(165deg,"+b+","+a+");";
- if(t==0)return base+"background-image:radial-gradient(circle at 68% 34%,"+c+" 0 17%,transparent 18%),linear-gradient(165deg,"+b+","+a+")";
- if(t==1)return base+"background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.16) 0 7px,transparent 7px 22px),radial-gradient(circle at 30% 70%,"+c+" 0 22%,transparent 23%),linear-gradient(165deg,"+b+","+a+")";
- if(t==2)return base+"background-image:repeating-radial-gradient(circle at 50% 38%,"+c+" 0 5px,transparent 5px 16px),linear-gradient(165deg,"+b+","+a+")";
- if(t==3)return base+"background-image:linear-gradient(135deg,transparent 52%,rgba(0,0,0,.35) 52%),radial-gradient(circle at 50% 30%,"+c+" 0 13%,transparent 14%),linear-gradient(165deg,"+b+","+a+")";
- if(t==4)return base+"background-image:conic-gradient(from 200deg at 50% 100%,"+c+","+b+","+a+","+c+")";
- return base+"background-image:radial-gradient(ellipse at 50% 112%,"+c+" 0 38%,transparent 39%),radial-gradient(circle at 76% 24%,rgba(255,255,255,.75) 0 7%,transparent 8%),linear-gradient(165deg,"+b+","+a+")";}
-var wall=document.getElementById("wall"),k=0;
-for(var r=0;r<5;r++){var row=document.createElement("div");row.className="row";
- for(var n=0;n<2;n++){for(var j=0;j<10;j++){var q=(r*7+j*3)%T.length,p=P[(r*3+j)%P.length],d=document.createElement("div");d.className="po";
-  d.innerHTML='<div class="art" style="'+art(r+j,p)+'"></div><div class="g"></div>'+((j%4==0)?'<span class="n">NEW</span>':'')+'<div class="t">'+T[q][0]+'</div><div class="y">'+T[q][1]+' · 2026</div>';row.appendChild(d);}}
- wall.appendChild(row);}
-</script>
-</body></html>
+<footer>© 2026 Safar IPTV · A media player for your own IPTV service.</footer>
+</body>
+</html>
